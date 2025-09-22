@@ -56,7 +56,7 @@ const handler = async (msg, { conn }) => {
     // 6) Enviar imagen mejorada
     await conn.sendMessage(chatId, {
       image: { url: rem.data.data.url },
-      caption: "✅ *Imágen mejorada exitosamente por メ Ġᶏmԑя Bot V2.1*"
+      caption: "✅ *Imágen mejorada exitosamente.\n\n> HD build by: *ghostdev.js*"
     }, { quoted: msg });
 
     await conn.sendMessage(chatId, { react: { text: "✅", key: msg.key } });
